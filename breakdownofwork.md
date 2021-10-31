@@ -1,7 +1,7 @@
-March 9th (First Sprint Complete)
+November 1th (First Sprint Complete)
 Arthur Cai:
 I worked on the following tasks:
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
+1. Arthur added the delete function (uploaded by Michael).
 2. <Insert Some Task Here> - This task is responsible for xyz functionality.
 3. <Insert Some Task Here> - This task is responsible for xyz functionality.
 
@@ -10,11 +10,17 @@ I also needed to research on Youtube and Google the following things:
 
 Michael Chen:
 I worked on the following tasks:
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
+1. Micheal maintain the breakdown doc.
+2. Michael updated the project Repo.
+3. 
 
-I am awesome
+Michael also needed to research on Youtube and Google the following things:
+https://www.youtube.com/watch?v=L72fhGm1tfE
+
+Brian Ke:
+1.
+2.
+3.
 
 March 16th (Second Sprint Complete)
 Amy Chan:
