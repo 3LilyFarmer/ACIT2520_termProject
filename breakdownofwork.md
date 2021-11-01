@@ -18,9 +18,13 @@ Michael also needed to research on Youtube and Google the following things:
 https://www.youtube.com/watch?v=L72fhGm1tfE
 
 Brian Ke:
-1.
-2.
+I worked on the following tasks:
+1. Watched reminders videos on D2L.
+2. Added update functionality.
 3.
+
+I also needed to research on Youtube and Google the following things:
+1. https://www.youtube.com/watch?v=GihQAC1I39Q
 
 March 16th (Second Sprint Complete)
 Amy Chan:
