@@ -3,7 +3,8 @@ const app = express();
 const path = require("path");
 const ejsLayouts = require("express-ejs-layouts");
 const reminderController = require("./controller/reminder_controller");
-const authController = require("./controller/auth_controller");
+const {ensureAuthenticated, authController} = require("./controller/auth_controller");
+
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -15,7 +16,7 @@ app.set("view engine", "ejs");
 
 // Routes start here
 
-app.get("/reminders", reminderController.list);
+app.get("/reminders", ensureAuthenticated, reminderController.list);
 
 app.get("/reminder/new", reminderController.new);
 
