@@ -45,12 +45,12 @@ I also needed to research on Youtube and Google the following things:
 
 Brian Ke:
 I worked on the following tasks:
-1. Arthur implement the local login function (in progress)
-2.
-3.
+1. Updated GitHub Projects board
+2. Troubleshooting local login function (in progress)
+3. Implement GitHub login (in progress)
   
 I also needed to research on Youtube and Google the following things:
-1.
+1. https://www.youtube.com/watch?v=-RCnNyD0L-s
 
 November 15th (Third Sprint Complete)
 Michael Chen:
