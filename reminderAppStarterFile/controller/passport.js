@@ -8,21 +8,18 @@ let localLogin = new LocalStrategy(
     passwordField: "password",
   },
   (email, password, done) => {
-    const userCredentials = (email, password) => {
+    console.log("I entered here")
+    console.log(email, password)
+    
       let user = userModel.findOne(email);
       if (user) {
         if (user.password === password) {
-          return user;
+         return done(null, user)
         }
       }
-      return null;
-    };
-
-    return userCredentials
-      ? done(null, userCredentials)
-      : done(null, false, {
-          message: "Your login details are not valid. Please try again",
-        });
+      return done(null, false, {
+        message: "Your login details are not valid. Please try again",
+      });
   }
 );
 
@@ -32,7 +29,7 @@ passport.serializeUser(function (user, done) {
 });
   
 passport.deserializeUser(function (id, done) {
-    let user = userController.getUserById(id);
+    let user = userModel.findById(id);
     if (user) {
       done(null, user);
     } else {
