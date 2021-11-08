@@ -57,9 +57,6 @@ let remindersController = {
       } else {
         reminderCompleted = false;
       }
-      console.log(req.body.title)
-      console.log(req.body.description)
-      console.log(reminderCompleted)
       database.cindy.reminders[index]['title'] = req.body.title;
       database.cindy.reminders[index]['description'] = req.body.description;
       database.cindy.reminders[index]['completed'] = reminderCompleted;
