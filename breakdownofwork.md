@@ -30,6 +30,7 @@ I worked on the following tasks:
 1. Michael updated the project Repo
 2. Michael troubleshoot for team members.
 3. Michael implement the admin function (in progress)
+4. Michael demo the github desktop.
 
 I also needed to research on Youtube and Google the following things:
 1. <Insert Video or Link to thing you needed to research>
