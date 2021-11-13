@@ -1,9 +1,15 @@
 const database = [
     {
       id: 1,
-      name: "Jimmy Smith",
-      email: "jimmy123@gmail.com",
-      password: "jimmy123!",
+      name: "Cindy Smith",
+      email: "cindy123@gmail.com",
+      password: "cindy123!",
+    },
+    {
+      id: 2,
+      name: "Alex Smith",
+      email: "alex123@gmail.com",
+      password: "alex123!",
     }
 ]
 
