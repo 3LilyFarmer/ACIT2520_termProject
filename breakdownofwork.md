@@ -26,17 +26,86 @@ I also needed to research on Youtube and Google the following things:
 1. https://www.youtube.com/watch?v=GihQAC1I39Q
 
 November 8th (Second Sprint Complete)
-Amy Chan:
+Michael Chen:
 I worked on the following tasks:
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
+1. Michael updated the project Repo
+2. Michael troubleshoot for team members.
+3. Michael implement the admin function (in progress)
+4. Michael demo the github desktop.
 
 I also needed to research on Youtube and Google the following things:
 1. <Insert Video or Link to thing you needed to research>
 
-John Chen:
+Arthur Cai:
 I worked on the following tasks:
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
+1. Arthur implement the local login function (in progress)
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+Brian Ke:
+I worked on the following tasks:
+1. Updated GitHub Projects board
+2. Troubleshooting local login function (in progress)
+3. Implement GitHub login (in progress)
+  
+I also needed to research on Youtube and Google the following things:
+1. https://www.youtube.com/watch?v=-RCnNyD0L-s
+
+November 15th (Third Sprint Complete)
+Michael Chen:
+I worked on the following tasks:
+1.
+2.
+3.
+
+I also needed to research on Youtube and Google the following things:
+1.
+
+Arthur Cai:
+I worked on the following tasks:
+1.
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+Brian Ke:
+I worked on the following tasks:
+1. Arthur implement the local login function (in progress)
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+November 22th (Fourth Sprint Complete)
+Michael Chen:
+I worked on the following tasks:
+1.
+2.
+3.
+
+I also needed to research on Youtube and Google the following things:
+1.
+
+Arthur Cai:
+I worked on the following tasks:
+1.
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+Brian Ke:
+I worked on the following tasks:
+1. Arthur implement the local login function (in progress)
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
