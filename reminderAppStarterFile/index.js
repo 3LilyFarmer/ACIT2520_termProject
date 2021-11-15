@@ -1,12 +1,34 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const session = require("express-session");
 const ejsLayouts = require("express-ejs-layouts");
 const reminderController = require("./controller/reminder_controller");
 const authController = require("./controller/auth_controller");
+require('dotenv').config();
+const port = process.env.port || 3001;
+
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: false,
+      maxAge: 24 * 60 * 60 * 1000,
+    },
+  })
+);
 
+const passport = require("./controller/passport");
+const checkauth = require("./middleware/checkauth");
+const authRoute = require("./routes/auth_route");
+app.use(passport.initialize());
+app.use(passport.session());
+app.use("/auth", authRoute);
 app.use(express.urlencoded({ extended: false }));
 
 app.use(ejsLayouts);
@@ -15,7 +37,7 @@ app.set("view engine", "ejs");
 
 // Routes start here
 
-app.get("/reminders", reminderController.list);
+app.get("/reminders", checkauth.ensureAuthenticated, reminderController.list);
 
 app.get("/reminder/new", reminderController.new);
 
@@ -35,7 +57,10 @@ app.post("/reminder/delete/:id", reminderController.delete);
 app.get("/register", authController.register);
 app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
-app.post("/login", authController.loginSubmit);
+app.post("/login", passport.authenticate("local", {
+  successRedirect: "/reminders",
+  failureRedirect: "/login"
+}));
 
 app.listen(3001, function () {
   console.log(
