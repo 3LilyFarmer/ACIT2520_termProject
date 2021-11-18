@@ -4,6 +4,7 @@ const database = [
       name: "Cindy Smith",
       email: "cindy123@gmail.com",
       password: "cindy123!",
+      // profile: "./uploads/img.png"
     },
     {
       id: 2,

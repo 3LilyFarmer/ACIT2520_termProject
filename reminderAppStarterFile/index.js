@@ -1,11 +1,30 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const helmet = require("helmet");
+const morgan = require("morgan");
+const multer = require("multer");
+const imgur = require("imgur");
+const cors = require("cors");
+const fs = require("fs");
 const session = require("express-session");
 const ejsLayouts = require("express-ejs-layouts");
 const reminderController = require("./controller/reminder_controller");
 const authController = require("./controller/auth_controller");
 
+const storage = multer.diskStorage({
+  destination: "./uploads",
+  filename: (req, file, callback) => {
+    callback(
+      null,
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
+    );
+  },
+});
+
+const upload = multer({
+  storage: storage,
+});
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
@@ -25,6 +44,14 @@ const passport = require("./controller/passport");
 const checkauth = require("./middleware/checkauth");
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(cors());
+app.use(express.static("public"));
+app.use(morgan("dev"));
+app.use(helmet());
+app.use(express.json({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(upload.any());
 
 app.use(express.urlencoded({ extended: false }));
 
@@ -58,6 +85,18 @@ app.post("/login", passport.authenticate("local", {
   successRedirect: "/reminders",
   failureRedirect: "/login"
 }));
+
+// connect this to database
+app.post("/uploads/", async (req, res) => {
+  const file = req.files[0];
+  try {
+    const url = await imgur.uploadFile(`./uploads/${file.filename}`);
+    res.json({ message: url.data.link });
+    fs.unlinkSync(`./uploads/${file.filename}`);
+  } catch (error) {
+    console.log("error", error);
+  }
+});
 
 app.listen(3001, function () {
   console.log(
