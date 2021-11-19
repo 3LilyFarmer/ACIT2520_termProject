@@ -2,6 +2,7 @@ November 1th (First Sprint Complete)
 Arthur Cai:
 I worked on the following tasks:
 1. Arthur added the delete function (uploaded by Michael).
+2. Arthur added the functionality for users to not be able to view, edit, nor delete other users' reminders
 
 I also needed to research on Youtube and Google the following things:
 1. <Insert Video or Link to thing you needed to research>
