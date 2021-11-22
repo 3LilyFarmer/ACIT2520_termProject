@@ -1,13 +1,15 @@
 let Database = {
-    cindy: {
-        id: 1,
-        reminders: [{id: 1, title: "cindy", description: "abcabc", completed: false},
-                    {id: 2, title: "fgh", description: "hghkjsa", completed: false}]
-    },
+    // cindy: {
+    //     id: 1,
+    //     reminders: [{id: 1, title: "cindy", description: "abcabc", completed: false},
+    //                 {id: 2, title: "fgh", description: "hghkjsa", completed: false}],
+    //     picture: ""
+    // },
     alex: {
         id: 2,
         reminders: [{id: 1, title: "alex", description: "abcabc", completed: false},
-                    {id: 2, title: "fgh", description: "hghkjsa", completed: false}]
+                    {id: 2, title: "fgh", description: "hghkjsa", completed: false}],
+        picture: ""
     } 
 }
 
