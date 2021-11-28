@@ -99,9 +99,39 @@ I also needed to research on Youtube and Google the following things:
 
 Brian Ke:
 I worked on the following tasks:
-1. 
+1. Implement GitHub login (in progress)
+2. Implement UnsplashAPI account picture (in progress)
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+November 29th (Fifth Sprint Complete)
+Michael Chen:
+I worked on the following tasks:
+1.
 2.
 3.
+
+I also needed to research on Youtube and Google the following things:
+1.
+
+Arthur Cai:
+I worked on the following tasks:
+1.
+2.
+3.
+  
+I also needed to research on Youtube and Google the following things:
+1.
+
+Brian Ke:
+I worked on the following tasks:
+1. Implement GitHub login
+2. Implement UnsplashAPI account picture
+3. Implement upload profile picture
+4. Implement admin
+5. Rename files to camel case. Change file/folder structure.
   
 I also needed to research on Youtube and Google the following things:
 1.

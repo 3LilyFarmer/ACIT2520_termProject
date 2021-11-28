@@ -1,0 +1,17 @@
+<h1>Hello <%= user.name %>
+</h1>
+
+<% for (const [key, value] of Object.entries(sessions)) { %>
+    <% if (user.id !=key) { %>
+        <div>
+            <h3>User ID: <%= key %>
+            </h3>
+            <p>User Session: <%= value %>
+            </p>
+            <form style="border-bottom: solid 1px black;margin-bottom: 15px" class="deleteSession" method="POST"
+                action=<%="/admin/delete/" + value %>>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+        <% } %>
+            <% } %>
